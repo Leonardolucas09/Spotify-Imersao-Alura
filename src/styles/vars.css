@@ -1,0 +1,28 @@
+:root {
+    /* FONT */
+    --font-dm-sans: "DM Sans", sans-serif;
+
+    --grid-gap: 24px;
+    --column-count: 5;
+
+    /* COLORS */
+    --pretoFundo: #000;
+    --preto: #121212;
+    --cinza: #b3b3b3;
+    --cinzaClaro: #a7a7a7;
+    --cinzaMedio: #878787;
+    --cinzaEscuro: #242424;
+    --branco: #fff;
+    --rosa: #ae2896;
+    --azul: #509bf5;
+    --bg-icon: #131313;
+    --bg-arrow-color: rgba(0, 0, 0, 0;7)
+
+    
+    /* MEDIA QUERYS */
+    @media screen and (max-width: 767px) {
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1274px) {
+    }
+}

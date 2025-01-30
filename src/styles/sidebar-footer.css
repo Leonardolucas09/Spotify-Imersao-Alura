@@ -1,5 +1,6 @@
 body {
-    background-color: #000;
+    font-family: var(--font-dm-sans);
+    background-color: var(--pretoFundo);
 }
 
 h1 {
@@ -11,55 +12,69 @@ h1 {
     top: 0;
     left: 0;
     bottom: 0;
+    
     padding: 12px;
     width: 300px;
+
+    background-color: var(--pretoFundo);
 }
 
 .sidebar-navigation{
-    background-color: #121212;
+    background-color: var(--preto);
     border-radius: 8px;
-    padding: 16px 0 0 16px;
+    cursor: pointer;
 }
 
-.sidebar-navigation .logo {
+.sidebar .logo {
     display: flex;
     border-radius: 8px;
     
     padding: 16px 0 0 16px;
 
-    background: #121212;
+    background: var(--preto);
 }
 
-.sidebar-navigation .logo img {
+.sidebar .logo img {
     width: 80px;
 }
 
 .sidebar nav ul {
+    list-style: none;
     margin-top: 20px;
     padding: 0 20px 10px 20px;
 }
 
 .sidebar ul li {
-    padding: 10px 0;
+    padding: 10px 0px;
 }
 
 .sidebar nav ul li a {
-    color: #b3b3b3;
+    color: var(--cinza);
     text-decoration: none;
 
-    font-family: "DM Sans", sans-serif;
     font-weight: 600;
     font-size: 14px;
 }
 
+.sidebar nav ul li a:hover {
+    color: var(--branco);
+}
+
+.sidebar nav ul li .fa {
+    font-size: 20px;
+    margin-right: 10px;
+    font-weight: 300;
+}
+
 .library {
-    background-color: #121212;
-    color: #b3b3b3;
+    background-color: var(--preto);
+    color: var(--cinza);
     
     display: flex;
-    justify-content: spac   e-between;
+    justify-content: space-between;
     flex-direction: column;
     
+    min-block-size: 40px;
     border-radius: 8px;
     padding: 4px 8px;
     margin-top: 10px;
@@ -68,7 +83,7 @@ h1 {
     font-size: 14px;
 }
 
-.library .library-content {
+.library-content {
     display: flex;
     justify-content: space-between;
 }
@@ -80,14 +95,13 @@ h1 {
     padding: 20px 10px;
 
     background-color: transparent;
-    color: #b3b3b3;
+    color: var(--cinza);
 
     border: 0px;
 
-    font-size: 14px;
+    font-size: 1rem;
     font-weight: 700;
-    font-family: "DM Sans", sans-serif;
-    
+
     text-align: center;
     text-decoration: none;
     text-transform: none;
@@ -114,10 +128,10 @@ h1 {
     margin: 8px 0px;
     padding: 16px 20px;
 
-    border-radius: 10px;
+    border-radius: 8px;
 
-    color: #b3b3b3;
-    background-color: #242424;
+    color: var(--cinza);
+    background-color: var(--cinzaEscuro);
 
     font-weight: 600;
     font-size: 14px;
@@ -130,9 +144,7 @@ h1 {
 
 .text {
     padding-bottom: 14px;
-    color: #fff;
-
-    font-family: "DM Sans", sans-serif;
+    color: var(--branco);
 }
 
 .section-playlist-content .title {
@@ -141,15 +153,15 @@ h1 {
 
 .section-playlist-content .subtitle {
     font-weight: 500;
-    font-size: 12px;
+    font-size: 0.8rem;
 }
 
 .section-playlist-content .section-playlist-button {
     display: flex;
     justify-content: center;
 
-    background-color: #fff;
-    color: #000;
+    background-color: var(--branco);
+    color: var(--pretoFundo);
 
     text-decoration: none;
     text-transform: none;
@@ -163,9 +175,6 @@ h1 {
 
     font-size: 12px;
     font-weight: 700;
-    font-family: "DM Sans", sans-serif;
-
-
 }
 
 .sidebar .cookies {
@@ -173,7 +182,7 @@ h1 {
 }
 
 .sidebar .cookies a {
-    color: #b3b3b3;
+    color: var(--cinza);
 
     text-decoration: none;
 
@@ -189,7 +198,7 @@ h1 {
     align-items: center;
 
     background-color: transparent;
-    color: #fff;
+    color: var(--branco);
 
     cursor: pointer;
 
@@ -199,7 +208,7 @@ h1 {
     margin: 8px;
     padding: 8px;
 
-    border: 1px solid #878787;
+    border: 1px solid var(--cinzaMedio);
     border-radius: 20px;
 }
 
@@ -212,13 +221,13 @@ h1 {
     left: 0;
     right: 0;
 
-    background: linear-gradient(to right, #ae2896, #509bf5);
+    background: linear-gradient(to right, var(--rosa), var(--azul));
 
     padding: 15px 40px;
 }
 
 .disclaimer-premium .disclaimer-premium-title {
-    color: #fff;
+    color: var(--branco);
     text-transform: uppercase;
     
     margin-bottom: 10px;
@@ -228,15 +237,15 @@ h1 {
 }
 
 .disclaimer-premium .disclaimer-premium-subtitle {
-    color: #fff;
+    color: var(--branco);
 
     font-size: 14px;
     font-weight: 500;
 }
 
 .disclaimer-premium-button{
-    background-color: #fff;
-    color: #000;
+    background-color: var(--branco);
+    color: var(--pretoFundo);
 
     font-size: 16px;
     font-weight: bold;
@@ -247,4 +256,5 @@ h1 {
     border-radius: 40px;
     
     cursor: pointer;
+    flex-shrink: 0;
 }
